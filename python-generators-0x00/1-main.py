@@ -1,6 +1,8 @@
 
 from itertools import islice
-stream_users = __import__('0-stream_users')
+from streamer_users import stream_users
+# stream_users = __import__('0-stream_users')
+
 
 # iterate over the generator function and print only the first 6 rows
 
