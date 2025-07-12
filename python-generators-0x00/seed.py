@@ -7,8 +7,8 @@ import uuid
 def connect_db():
     return mysql.connector.connect(
         host='localhost',
-        user='root',
-        password=''  # Replace with your MySQL root password
+        user='alx_dev',
+        password='alx_dev'  # Replace with your MySQL root password
     )
 
 def create_database(connection):
@@ -20,8 +20,8 @@ def create_database(connection):
 def connect_to_prodev():
     return mysql.connector.connect(
         host='localhost',
-        user='root',
-        password='your_password',  # Replace with your MySQL root password
+        user='alx_dev',
+        password='alx_dev',  # Replace with your MySQL root password
         database='ALX_prodev'
     )
 
