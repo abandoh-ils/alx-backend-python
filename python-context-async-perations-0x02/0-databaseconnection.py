@@ -33,9 +33,9 @@ class DatabaseConnection:
 if __name__ == "__main__":
     with DatabaseConnection(
         host="localhost",
-        user="root",
-        password="your_password",
-        database="your_database"
+        user="alx_dev",
+        password="alx_dev",
+        database="ALX_prodev"
     ) as cursor:
         cursor.execute("SELECT * FROM users")
         results = cursor.fetchall()
