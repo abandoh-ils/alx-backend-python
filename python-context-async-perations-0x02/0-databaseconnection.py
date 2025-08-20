@@ -28,3 +28,16 @@ class DatabaseConnection:
             self.cursor.close()
         if self.conn:
             self.conn.close()
+
+# Example usage
+if __name__ == "__main__":
+    with DatabaseConnection(
+        host="localhost",
+        user="root",
+        password="your_password",
+        database="your_database"
+    ) as cursor:
+        cursor.execute("SELECT * FROM users")
+        results = cursor.fetchall()
+        for row in results:
+            print(row)
